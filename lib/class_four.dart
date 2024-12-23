@@ -10,9 +10,9 @@ class ClassFour extends StatelessWidget {
         toolbarHeight: 100,
         backgroundColor: Colors.amberAccent,
         elevation: 2,
-        leading: Icon(Icons.home),
+        leading: const Icon(Icons.home),
         title: const Text('Class Four'),
-        actions: [
+        actions: const [
           Icon(Icons.mode),
           Icon(Icons.exit_to_app),
           Icon(Icons.wechat_sharp),
@@ -48,7 +48,7 @@ class ClassFour extends StatelessWidget {
                           text: 'sirs\t',
                           style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
-                        const TextSpan(
+                         TextSpan(
                           text: 'sirs\t',
                           style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
