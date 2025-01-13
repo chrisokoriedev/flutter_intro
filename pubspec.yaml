@@ -15,6 +15,7 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   carousel_slider:
+  flutter_staggered_grid_view:
 
 
 dev_dependencies:
