@@ -1,5 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+
+import 'resusable_widget.dart';
 
 class CarouselSliderClass extends StatelessWidget {
   const CarouselSliderClass({super.key});
@@ -27,17 +30,14 @@ class CarouselSliderClass extends StatelessWidget {
           'flutter_staggered_grid_view',
           style: TextStyle(fontSize: 30),
         ),
-        
+        const SizedBox(height: 20),
+        StaggeredGrid.count(
+          crossAxisCount: 2,
+          mainAxisSpacing: 5.0,
+          crossAxisSpacing: 5.0,
+          children: cardTile,
+        ),
       ],
     ));
   }
 }
-
-List<Widget> itemContent = [
-  Container(width: 300, color: Colors.red),
-  Container(width: 300, color: Colors.black),
-  Container(width: 300, color: Colors.blue),
-  Container(width: 300, color: Colors.brown),
-  Container(width: 300, color: Colors.pink),
-  Container(width: 300, color: Colors.yellow),
-];
