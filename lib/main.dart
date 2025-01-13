@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'app_design_one.dart';
+import 'package:flutter_intro/class_five.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: false,
       ),
-      home: const AppDesignOne(),
+      home: const CarouselSliderClass(),
     );
   }
 }
